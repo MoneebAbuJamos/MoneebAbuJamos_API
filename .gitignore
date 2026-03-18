@@ -3,9 +3,7 @@
 # ========================
 venv/
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+
 
 # ========================
 # Environment
@@ -65,5 +63,5 @@ vector_store/
 # ========================
 # Large Binary Dependencies (VERY IMPORTANT 🔥)
 # ========================
-deliverables/_internal/torch/lib/torch_cpu.dllr
+deliverables/_internal/torch/lib/torch_cpu.dll
 run_api.py
