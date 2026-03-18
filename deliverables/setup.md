@@ -167,3 +167,86 @@ http://127.0.0.1:8000/docs
 * All dependencies are bundled inside the executable
 * The batch file waits for the server to be ready before opening the browser
 * First startup may take a few seconds due to model loading
+
+
+
+# ==================================================
+
+# Cloud Demo Deployment
+
+# ==================================================
+
+## Live Demo
+
+The system is deployed using Hugging Face Spaces:
+
+https://huggingface.co/spaces/njrfbnjrkef/moneeb-api-demo
+
+---
+
+## How to Access the Demo
+
+1. Open the link above
+2. Navigate to the interface
+3. Choose one of the available features:
+
+   * Chat
+   * Summarization
+   * Sentiment Analysis
+4. Enter input and click **Run**
+5. The result will appear directly on the screen
+
+---
+
+## Deployed Features
+
+The cloud demo includes the following components:
+
+* Chat (LLM-based)
+* Text Summarization
+* Sentiment Analysis
+
+---
+
+## Adaptation and Design Decisions
+
+To ensure compatibility with the free hosting environment, the demo was simplified.
+
+### RAG (Retrieval-Augmented Generation)
+
+Not included in the cloud demo because:
+
+* Requires vector database setup (e.g., ChromaDB)
+* Adds complexity and dependencies
+* Not practical for free-tier deployment
+
+---
+
+### OCR (Tesseract)
+
+Not included in the cloud demo because:
+
+* Requires system-level installation
+* Not supported in Hugging Face Spaces environment
+* Would break portability of the demo
+
+---
+
+### Model Constraints
+
+* The deployment runs on CPU only
+* Large models significantly slow down performance
+* A lightweight configuration was used to ensure responsiveness
+
+---
+
+## Summary
+
+The deployed demo focuses on:
+
+* Simplicity
+* Stability
+* Ease of evaluation
+
+The full system (including OCR and RAG) is available in the offline version.
+
