@@ -1,0 +1,69 @@
+# ========================
+# Python
+# ========================
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ========================
+# Environment
+# ========================
+.env
+
+# ========================
+# OS files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# IDE
+# ========================
+.vscode/
+.idea/
+
+# ========================
+# Runtime generated files
+# ========================
+vector_store/
+
+# ========================
+# Build / packaging
+# ========================
+dist/
+build/
+*.spec
+
+# ========================
+# Models (VERY IMPORTANT 🔥)
+# ========================
+models/*
+!models/.gitkeep
+
+
+# ========================
+# EXE internal models (Section 3)
+# ========================
+deliverables/_internal/models/
+
+# ========================
+# Chroma / vector DB (optional)
+# ========================
+vector_store/
+
+# ========================
+# Safety: ignore large binaries
+# ========================
+*.gguf
+*.bin
+*.pt
+*.onnx
+
+
+# ========================
+# Large Binary Dependencies (VERY IMPORTANT 🔥)
+# ========================
+deliverables/_internal/torch/lib/torch_cpu.dllr
+run_api.py
